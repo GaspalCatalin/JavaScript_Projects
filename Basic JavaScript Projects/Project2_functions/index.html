@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <script src="JS/main.js"></script>
+    <title>My first function</title>
+</head>
+<body>
+    <!--HTML and JavaScript functions-->
+    <h3>Functions</h3>
+            <button onclick="My_First_Function()" id="Button_Text">Click me!</button>
+            <button onclick="document.getElementById('demo').innerHTML=Date()">What time is it?</button>
+            <p id="demo"></p>
+    
+            <!--Concatenating with operators-->
+            <p id="Concatenate" onclick="myFunction()">Curious?</p>
+
+    <h3 id="changeColor" onclick="changeCol()">Convert Fahrenheit to Celsius (Click me!)</h3>
+    
+    <p>
+        <label>Fahrenheit</label>
+        <input id="inputFahrenheit" type="number"
+        placeholder="Fahrenheit"
+        oninput="temperatureConverter(this.value)"
+        onchange="temperatureConverter(this.value)">
+    </p>
+    <p>Celsius: <span id="outputCelsius"></span></p>
+</body>
+</html>
