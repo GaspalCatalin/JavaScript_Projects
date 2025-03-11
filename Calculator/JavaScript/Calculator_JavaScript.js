@@ -29,7 +29,7 @@ function Input_Digit(digit) {
 function Input_Decimal(dot) {
     //This ensures that accidental clicking of the decimal point doesn't
     //cause bugs in the operation.
-    if (Calculator.Wait_Second_Operand === 'true') return;
+    if (Calculator.Wait_Second_Operand === true) return;
     if (!Calculator.Display_Value.includes(dot)) {
         //We are saying that if the Display_Value does not contain a decimal point
         //we want to add a decimal point.
@@ -91,8 +91,8 @@ function Update_Display() {
 
 Update_Display ();
 //This section monitors button clicks
-const keys = document.querySelector('calculator-keys');
-keys.addEventList('click', (event) => {
+const keys = document.querySelector('.calculator-keys');//Fixed the selector
+keys.addEventListener('click', (event) => { //Fixed the method name
     //The target variable is an object that represents the element
     //that was clicked.
     const { target } = event;
@@ -118,4 +118,4 @@ keys.addEventList('click', (event) => {
     }
     Input_Digit(target.value);
     Update_Display();
-}
+});
