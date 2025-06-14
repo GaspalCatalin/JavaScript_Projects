@@ -1,0 +1,33 @@
+body {
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box {
+    height: 230px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: rgb(172, 46, 78);
+    font-size: 10em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    animation: zoom-in-out 1s ease infinite;
+}
+
+@keyframes zoom-in-out {
+    0% {
+        scale: 100%;
+    }
+    50% {
+        scale: 150%;
+    }
+    100% {
+        scale: 100%;
+    }
+}
+
