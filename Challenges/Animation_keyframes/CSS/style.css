@@ -1,0 +1,25 @@
+body {
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box {
+    height: 230px;
+    width: 250px;
+    background-color: rgb(154, 25, 25);
+    font-size: 10em;
+    text-align: center;
+    animation: rotateSlide;
+    animation-duration: 2s;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+@keyframes rotateSlide {
+    50%{transform: rotateZ(360deg);}
+}
+
