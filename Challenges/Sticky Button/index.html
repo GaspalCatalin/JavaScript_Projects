@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">Login</button>
+        <div class="popup" id="popup">
+            <img src="./img/check.png" alt="Check button">
+            
+            <h2>Login</h2>
+            
+            <form action="/action_page.php" class="form-container">
+                
+            
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="subutton">Login</button>
+                <button type="button" onclick="closePopup()" class="clbutton">Close</button>
+            </form>
+        </div>
+    </div>
+
+<script>
+let popup = document.getElementById("popup");
+
+function openPopup() {
+    popup.classList.add("open-popup");
+}
+
+function closePopup() {
+    popup.classList.remove("open-popup");
+}
+</script>
+</body>
+</html>
