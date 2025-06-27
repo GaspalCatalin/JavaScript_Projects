@@ -2,9 +2,10 @@ The purpose of this repository is to be a container for all my projects within t
 
 These are some small projects I made using JavaScript:
 
-  - Pizza Menu
-  - Tic-Tac-Toe Game
-  - Calculator
+  - Pizza Menu: https://github.com/GaspalCatalin/JavaScript_Projects/tree/main/Pizza_Project
+  - Tic-Tac-Toe Game: https://github.com/GaspalCatalin/JavaScript_Projects/tree/main/TicTacToe
+  - Calculator: https://github.com/GaspalCatalin/JavaScript_Projects/tree/main/Calculator
+  - Todo app: https://github.com/GaspalCatalin/JavaScript_Projects/tree/main/todo_app
 
 Pizza Menu
 This project is a menu used to order pizza with a various selection of toppings. 
@@ -16,3 +17,6 @@ Contains sounds and graphics in case of a win or a draw. Restarts as soon as the
 
 Calculator
 A basic 4 function calculator. Users can add, subtract, multiply, and divide on a sleek web version.
+
+Todo app
+A classic todo app. The user can add and remove items in a list.
